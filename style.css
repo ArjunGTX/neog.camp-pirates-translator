@@ -6,7 +6,7 @@
     padding: 0;
     margin: 0;
     font-size: 10px;
-    --yellow: #EC4899;
+    --bg-color: #EF4444;
 }
 body{
     display: flex;
@@ -14,8 +14,8 @@ body{
 }
 .header-section {
     width: 100%;
-    min-height: 150px;
-    background-color: var(--yellow);
+    min-height: 120px;
+    background-color: var(--bg-color);
     display: flex;
     justify-content: center;
 }
@@ -27,10 +27,8 @@ body{
 .header-section img {
     margin: 15px 15px 15px 60px;
     transition: all 0.4s;
-    width: 120px;
-}
-.header-section img:hover {
-    transform: rotate(10deg);
+    width: 100px;
+    object-fit: contain;
 }
 .main-section {
     display: grid;
@@ -42,14 +40,13 @@ body{
 .container-left {
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding: 20px;
     align-items: center;
 }
 .container-right {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
     padding: 20px;
 }
 .container-right img {
@@ -58,7 +55,7 @@ body{
 .text-field {
     width: 400px;
     margin: 20px;
-    border: 5px solid var(--yellow);
+    border: 5px solid var(--bg-color);
     border-radius: 20px;
     resize: none;
     padding: 20px;
@@ -74,19 +71,19 @@ body{
     padding: 5px 20px;
     font-size: 2.6rem;
     border-radius: 20px;
-    border: 5px solid var(--yellow);
+    border: 5px solid var(--bg-color);
     background-color: #fff;
     color: var(--yellow);
     margin: 15px;
 }
 #btn-translate:hover {
-    background-color: var(--yellow);
+    background-color: var(--bg-color);
     color: #fff;
 }
 .note {
     width: 400px;
     height: 70px;
-    background-color: var(--yellow);
+    background-color: var(--bg-color);
     border-radius: 0 20px 20px 20px;
     padding: 15px;
     font-size: 1.4rem;
@@ -98,6 +95,27 @@ body{
 }
 #text-output {
     pointer-events: none;
+}
+footer {
+    width: 100%;
+    min-height: 100px ;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer h2 {
+    font-size: 2.5rem ;
+    margin: 2rem 0 0 1rem;
+}
+footer img{
+    width: 5rem;
+    margin: 1rem;
+    transition: all .2s;
+}
+footer img:hover {
+    transform: scale(1.15);
 }
 
 @media(max-width:900px) and (min-width:650px){
